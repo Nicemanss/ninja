@@ -12,8 +12,6 @@
       UnityLoader.instantiate("gameContainer", "Build/ninja.json", {onProgress: UnityProgress});
     </script>
     <style>
-      @media screen and (orientation:landscape)
-      {
         * {
             margin: 0;
             padding: 0;
@@ -23,11 +21,16 @@
         }
         canvas, .webgl-content, #gameContainer
         {
+            width: 100%;
+            height: 100%;
+        }
+      @media screen and (orientation:landscape)
+      {
+        canvas, .webgl-content, #gameContainer
+        {
             -ms-transform: rotate(-90deg); /* IE 9 */
             -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
             transform: rotate(-90deg);
-            width: 100%;
-            height: 100%;
             overflow: scroll;
         }
       }
@@ -37,6 +40,6 @@
     <div class="webgl-content">
       <div id="gameContainer"></div>
     </div>
-    6
+    7
   </body>
 </html>
