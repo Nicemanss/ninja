@@ -1,4 +1,13 @@
 {
-    "display":      "browser", /* Could be "fullscreen", "standalone", "minimal-ui", or "browser" */
-    "orientation":  "landscape", /* Could be "landscape" or "portrait" */
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "/"
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "icons": [
+  {
+    "src": "TemplateData/webgl-logo.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }
 }
